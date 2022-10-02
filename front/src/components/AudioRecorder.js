@@ -50,8 +50,10 @@ export default class AudioRecorder extends Component {
         this.setState({
           audioSrc: state,
         });
-        this.props.setAppSrc(e);
-        console.log("succ stop", e);
+        const theBlob = e;
+        console.log("is it a blob?", theBlob instanceof Blob)
+        this.props.setAppSrc(theBlob);
+        console.log("contents of blob", e.type);
       },
       onRecordCallback: (e) => {
         console.log("recording", e);

@@ -1,0 +1,731 @@
+{
+  "dataset": "xed_en_fi",
+  "config": "en_annotated",
+  "split": "train",
+  "features": [
+    {
+      "feature_idx": 0,
+      "name": "sentence",
+      "type": { "dtype": "string", "id": null, "_type": "Value" }
+    },
+    {
+      "feature_idx": 1,
+      "name": "labels",
+      "type": {
+        "feature": {
+          "num_classes": 9,
+          "names": [
+            "neutral",
+            "anger",
+            "anticipation",
+            "disgust",
+            "fear",
+            "joy",
+            "sadness",
+            "surprise",
+            "trust"
+          ],
+          "id": null,
+          "_type": "ClassLabel"
+        },
+        "length": -1,
+        "id": null,
+        "_type": "Sequence"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "row_idx": 0,
+      "row": { "sentence": ", ...", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 1,
+      "row": { "sentence": "!", "labels": [1, 4, 7] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 2,
+      "row": {
+        "sentence": "... And I don't think we need to discuss the Trinity any more .",
+        "labels": [8, 1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 3,
+      "row": { "sentence": "* So get up out of your bed", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 4,
+      "row": {
+        "sentence": "A confession that you hired [PERSON] ... and are responsible for my father's murder .",
+        "labels": [1, 6]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 5,
+      "row": {
+        "sentence": "A dead man has one half - hour to raise his roll outside and get back in the game .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 6,
+      "row": {
+        "sentence": "A guy that's talking about he's gonna solve all your problems .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 7,
+      "row": {
+        "sentence": "A guy who was a pain in the neck even before I carried his stuff .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 8,
+      "row": {
+        "sentence": "A hundred of these are produced every day and sent to sweatshops where urban slaves prepare this poison for our friends , our loved ones , our children .",
+        "labels": [1, 3]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 9,
+      "row": {
+        "sentence": "A lady wouldn't work for this outfit .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 10,
+      "row": {
+        "sentence": "A little dicey doing a background on an FBI agent .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 11,
+      "row": { "sentence": "A little restraint ?", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 12,
+      "row": { "sentence": "A little rush ?", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 13,
+      "row": {
+        "sentence": "A lost decade , but it was worth it to make your father pay for my loss .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 14,
+      "row": { "sentence": "A lot of junk all right ...", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 15,
+      "row": {
+        "sentence": "A lot of people are going to pay for this night .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 16,
+      "row": {
+        "sentence": "A lot of you incumbents will be in danger of losing your seats .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 17,
+      "row": { "sentence": "A man is going to die .", "labels": [1, 6] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 18,
+      "row": { "sentence": "A map's no good in the outback !", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 19,
+      "row": {
+        "sentence": "A perfect place to lose anybody , but this little doll's our cover story .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 20,
+      "row": { "sentence": "A traitor !", "labels": [1, 3] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 21,
+      "row": {
+        "sentence": "A woman who drinks is bad enough and I will not stand for a woman cursing and blaspheming God .",
+        "labels": [1, 3]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 22,
+      "row": {
+        "sentence": "[PERSON] , why don't you just ... Lighten up .",
+        "labels": [1, 2]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 23,
+      "row": { "sentence": "About time !", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 24,
+      "row": {
+        "sentence": "Absolute disregard to not show up .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 25,
+      "row": { "sentence": "Acknowledge , over .", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 26,
+      "row": {
+        "sentence": "Acts of homicide and cannibalism reported through the afternoon are contributable , at least in part , to these reactivated bodies .",
+        "labels": [1, 6]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 27,
+      "row": {
+        "sentence": "[PERSON] , I don't think it'd be so bad if I taught him how to throw a few ...",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 28,
+      "row": { "sentence": "[PERSON] , what did I do ?", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 29,
+      "row": { "sentence": "[PERSON] , where's the kid ?", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 30,
+      "row": {
+        "sentence": "After that , I don't care if you've found the Holy Grail .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 31,
+      "row": { "sentence": "After them ! After them !", "labels": [1, 2] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 32,
+      "row": { "sentence": "After them ... slowly !", "labels": [1, 2] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 33,
+      "row": { "sentence": "Ah , for fuck's sake , mate .", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 34,
+      "row": {
+        "sentence": "Ah ! - You should listen to your brother .",
+        "labels": [1, 7]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 35,
+      "row": {
+        "sentence": "Ahem . Father brophy was very disturbed .",
+        "labels": [1, 6]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 36,
+      "row": {
+        "sentence": "Ain't gonna get tied down with no girl .",
+        "labels": [1, 2]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 37,
+      "row": { "sentence": "Ain't much you can do about us .", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 38,
+      "row": {
+        "sentence": "Ain't nobody in the world gonna drive this except me .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 39,
+      "row": { "sentence": "Alas ... Scalpel .", "labels": [1, 2] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 40,
+      "row": {
+        "sentence": "[PERSON] , will you let me finish ?",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 41,
+      "row": { "sentence": "All dead , you mean !", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 42,
+      "row": {
+        "sentence": "All hands to rescue stations !",
+        "labels": [1, 2, 4]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 43,
+      "row": { "sentence": "All happened on your watch .", "labels": [1, 3] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 44,
+      "row": {
+        "sentence": "All I asked you is where the hell [PERSON] is .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 45,
+      "row": {
+        "sentence": "All I can charge him with is riding on a train . They're gonna walk .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 46,
+      "row": {
+        "sentence": "All I know is that I'd like to meet a member of the judiciary or a member of Congress that thinks that this situation , the status quo is satisfactory .",
+        "labels": [1, 3]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 47,
+      "row": {
+        "sentence": "All I want to do is make things as difficult as possible .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 48,
+      "row": {
+        "sentence": "All I'm saying is maybe all the child needs is to be loved .",
+        "labels": [8, 1, 2]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 49,
+      "row": {
+        "sentence": "All other movements are restricted .",
+        "labels": [1, 2]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 50,
+      "row": { "sentence": "All right , I will !", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 51,
+      "row": {
+        "sentence": "All right , next time I hear it , I am taking it away .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 52,
+      "row": {
+        "sentence": "All right , not now , but you need to hear this .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 53,
+      "row": {
+        "sentence": "All right , now , send that woman and her young ' uns out !",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 54,
+      "row": {
+        "sentence": "All right , [LOCATION] , that's enough .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 55,
+      "row": { "sentence": "All right , talk !", "labels": [1, 2] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 56,
+      "row": {
+        "sentence": "All right , what is it if I may ask , You do want to do ?",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 57,
+      "row": { "sentence": "All right !", "labels": [1, 2, 5] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 58,
+      "row": {
+        "sentence": "All right . I'll talk to [PERSON] .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 59,
+      "row": {
+        "sentence": "All right . I've heard enough . I've heard enough .",
+        "labels": [1, 3]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 60,
+      "row": { "sentence": "All right . Let's go .", "labels": [1, 2] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 61,
+      "row": { "sentence": "All that Latino macho shit .", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 62,
+      "row": {
+        "sentence": "All the officers were disloyal .",
+        "labels": [1, 3, 6, 7]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 63,
+      "row": {
+        "sentence": "All this talk's just wasting time .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 64,
+      "row": {
+        "sentence": "All those bottles , of sizes different , completely in the wrong order ...",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 65,
+      "row": {
+        "sentence": "All those guns and violence ...",
+        "labels": [1, 3, 4, 6]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 66,
+      "row": {
+        "sentence": "All you have to do ... is point her out and look the other way .",
+        "labels": [1, 3, 7]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 67,
+      "row": { "sentence": "All : Ohh , shit .", "labels": [1, 4] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 68,
+      "row": {
+        "sentence": "[PERSON] , what have you done my little sister ?",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 69,
+      "row": {
+        "sentence": "Alright , have it any way you want !",
+        "labels": [1, 3]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 70,
+      "row": { "sentence": "Alright , knock it off !", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 71,
+      "row": { "sentence": "Altitude !", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 72,
+      "row": {
+        "sentence": "Altitude ? - Altitude . You want some altitude ?",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 73,
+      "row": {
+        "sentence": "Am I okay ? Everybody's worried sick about you .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 74,
+      "row": { "sentence": "Am I wrong , Lady ?", "labels": [8, 1, 2] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 75,
+      "row": { "sentence": "Amateur .", "labels": [1, 3] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 76,
+      "row": { "sentence": "An executive order ...", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 77,
+      "row": {
+        "sentence": "An ... an accident ? Easy , [PERSON] , easy . Watch the rug .",
+        "labels": [1, 4, 7]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 78,
+      "row": {
+        "sentence": "And actresses are treated like I hate to use the word , but , shit .",
+        "labels": [1, 3, 4, 6]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 79,
+      "row": { "sentence": "And all that crap .", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 80,
+      "row": {
+        "sentence": "And [PERSON] , she won't help me to solve them .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 81,
+      "row": {
+        "sentence": "And don't bother sending a bill , either !",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 82,
+      "row": {
+        "sentence": "And don't mess with nobody's girlfriend .",
+        "labels": [8, 1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 83,
+      "row": {
+        "sentence": "And don't try anything funny , cos you know what you'll get .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 84,
+      "row": {
+        "sentence": "And don't waste none of his time , because he ain't staying around long .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 85,
+      "row": {
+        "sentence": "And he waded in there with a lead pipe and he saved your ass and now you're going to deny him over his dead body ?",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 86,
+      "row": { "sentence": "And how about translators ?", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 87,
+      "row": { "sentence": "And how do you know that ?", "labels": [8, 1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 88,
+      "row": {
+        "sentence": "And how is that different than all the times you risked me ?",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 89,
+      "row": {
+        "sentence": "And I ain't gonna repeat what he said .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 90,
+      "row": { "sentence": "And I can't get started .", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 91,
+      "row": {
+        "sentence": "And I dangled it in front of him and ripped it away .",
+        "labels": [1, 3, 7]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 92,
+      "row": {
+        "sentence": "And I don't care whether you go down with him or not .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 93,
+      "row": {
+        "sentence": "And I don't share my husband with anyone !",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 94,
+      "row": {
+        "sentence": "And I fear no one , Especially an unholy spirit from an unsavory world .",
+        "labels": [1, 2]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 95,
+      "row": {
+        "sentence": "And I hate the way you drive , and I hate your stinking whiskey breath .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 96,
+      "row": {
+        "sentence": "And I hate these fucking doughnuts .",
+        "labels": [1, 3]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 97,
+      "row": { "sentence": "And I stormed out .", "labels": [1] },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 98,
+      "row": {
+        "sentence": "And I want a list of everybody's budgets , research accounts and financials on my desk by tomorrow .",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 99,
+      "row": {
+        "sentence": "And I want [PERSON] and [PERSON] ... dead !",
+        "labels": [1]
+      },
+      "truncated_cells": []
+    }
+  ]
+}
