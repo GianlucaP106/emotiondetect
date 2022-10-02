@@ -8,9 +8,11 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "constants": "^0.0.2",
+    "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
     "fs-extra": "^10.1.0",
     "graceful-fs": "^4.2.10",
+    "jquery": "^3.6.1",
     "jsonfile": "^6.1.0",
     "react": "^18.2.0",
     "react-audio-analyser": "^1.0.0",
@@ -31,6 +33,11 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   },
   "browserslist": {
     "production": [

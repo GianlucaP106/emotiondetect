@@ -1,49 +1,43 @@
 import AudioRecorder from "./components/AudioRecorder.js";
 import "./styles/App.css";
+
 import React, { useState } from "react";
+import { saveAs } from 'file-saver';
 import "./styles/AudioStyles.css";
+import { $ } from 'jquery';
+const fs = require('fs')
+const os = require('os')
 const axios = require("axios");
 
 function App() {
   const [blobSrc, setBlobsrc] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
 
   const setRecorderBlobsrc = (wtvSrc) => {
     setBlobsrc(wtvSrc);
   };
 
   async function sendFile() {
-    // const file = "/hello.wav"
-    // const fd = new FormData();
-    // fd.set('file', file)
-
-    // try {
-    //   const response = await fetch("http://127.0.0.1:5000/audio", {
-    //     mode: 'no-cors',
-    //     method: "POST",
-    //     body: fd
-    //   });
-    // } catch (err) {
-    //   console.log(err);
-    // }
-
-    // var audioFile = fs.createReadStream("/Users/parsalangari/Desktop/SIDE_LEARNING/hack-repo/emotiondetecttemp/front/public/hello.wav")
-    var form = new FormData();
     const currentSrc = blobSrc;
-    console.log(currentSrc);
-    console.log(typeof(currentSrc))
-    form.append('file', currentSrc , 'file')
+    const filename = 'audioFileMLMAIS-' + String(currentIndex);
+    setCurrentIndex(currentIndex + 1)
+    saveAs(currentSrc, filename, "audioFileMLMAIS-" + String(currentIndex));
+    filename = 'audioFileMLMAIS-' + String(currentIndex);
+    const dirname = '/Users/my-mac/Downloads'
+    const filepath = os.path.join(dirname, filename)
 
-    await axios.post("http://127.0.0.1:5000/audio",
-        form,
-        {
-            headers: {
-                "Content-Type": "multipart/form-data"
-            }
-        }
-    )
-    .then(result => {
-        console.log(result.data)
+    const response = await fetch('http://127.0.0.1:5000/audio ', {
+      method: 'POST',
+      header: {
+        'Content-Type': 'application/json'
+      },
+      body: filepath,
+      cache: 'default'
     })
+      .then(result => {
+        console.log(`Emotion of your text: ${result.json()}`)
+      })
   }
 
   return (

@@ -1,5 +1,7 @@
 //Code taken from https://codesandbox.io/s/x5653?file=/src/AudioRecorder.js:0-2367
 
+import axios from "axios";
+import { fs } from "fs";
 import React, { Component } from "react";
 import AudioAnalyser from "react-audio-analyser";
 
@@ -31,7 +33,6 @@ export default class AudioRecorder extends Component {
 
   render() {
     const { status, audioSrc, audioType } = this.state;
-
     const audioProps = {
       audioType,
       // audioOptions: {sampleRate: 30000}, // 设置输出音频采样率
