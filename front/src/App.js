@@ -2,17 +2,14 @@ import AudioRecorder from "./components/AudioRecorder.js";
 import "./styles/App.css";
 
 import React, { useState } from "react";
-import { saveAs } from 'file-saver';
+import { saveAs } from "file-saver";
 import "./styles/AudioStyles.css";
-import { $ } from 'jquery';
-const fs = require('fs')
-const os = require('os')
-const axios = require("axios");
+const os = require("os");
+// const axios = require("axios");
 
 function App() {
   const [blobSrc, setBlobsrc] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-
 
   const setRecorderBlobsrc = (wtvSrc) => {
     setBlobsrc(wtvSrc);
@@ -20,24 +17,23 @@ function App() {
 
   async function sendFile() {
     const currentSrc = blobSrc;
-    const filename = 'audioFileMLMAIS-' + String(currentIndex);
-    setCurrentIndex(currentIndex + 1)
+    let filename = "audioFileMLMAIS-" + String(currentIndex);
+    setCurrentIndex(currentIndex + 1);
     saveAs(currentSrc, filename, "audioFileMLMAIS-" + String(currentIndex));
-    filename = 'audioFileMLMAIS-' + String(currentIndex);
-    const dirname = '/Users/my-mac/Downloads'
-    const filepath = os.path.join(dirname, filename)
+    filename = "audioFileMLMAIS-" + String(currentIndex);
+    const dirname = "/Users/my-mac/Downloads";
+    const filepath = os.path.join(dirname, filename);
 
-    const response = await fetch('http://127.0.0.1:5000/audio ', {
-      method: 'POST',
+    await fetch("http://127.0.0.1:5000/audio ", {
+      method: "POST",
       header: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
       body: filepath,
-      cache: 'default'
-    })
-      .then(result => {
-        console.log(`Emotion of your text: ${result.json()}`)
-      })
+      cache: "default",
+    }).then((result) => {
+      console.log(`Emotion of your text: ${result.json()}`);
+    });
   }
 
   return (
